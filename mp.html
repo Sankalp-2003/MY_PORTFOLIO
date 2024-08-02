@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="works.css">
+</head>
+<body>
+  <div class="container cont3">
+    
+  </div>
+  
+  <script>
+    let container = document.querySelector('.container');
+
+let mp = [
+  {name:'Heart Trail Animation', img:'mini projects/1.png', link:'https://sankalp-2003.github.io/Heart-Trail-Animation/', git:'https://github.com/Sankalp-2003/Heart-Trail-Animation'},
+
+  {name:'Auto Trxt Effect Animation', img:'mini projects/2.png', link:'https://sankalp-2003.github.io/Auto-Text-Effect-Animation/', git:'https://github.com/Sankalp-2003/Auto-Text-Effect-Animation'},
+
+  {name:'Button Ripple Effect', img:'mini projects/3.png', link:'https://sankalp-2003.github.io/Button-Ripple-Effect/', git:'https://github.com/Sankalp-2003/Button-Ripple-Effect'},
+
+  {name:'Mini Calendar', img:'mini projects/4.png', link:'https://sankalp-2003.github.io/Mini-Calendar/', git:'https://github.com/Sankalp-2003/Mini-Calendar'},
+
+  {name:'Random Photos', img:'mini projects/5.png', link:'https://sankalp-2003.github.io/Random-Photos/', git:'https://github.com/Sankalp-2003/Random-Photos'},
+
+  {name:'Dark Mode Toggle', img:'mini projects/6.png', link:'https://sankalp-2003.github.io/Dark-Mode-Toggle/', git:'https://github.com/Sankalp-2003/Dark-Mode-Toggle'},
+
+  {name:'Testimonial Slider', img:'mini projects/7.png', link:'https://sankalp-2003.github.io/Testimonial-Slider/', git:'https://github.com/Sankalp-2003/Testimonial-Slider'},
+
+  {name:'Real-time Character Counter', img:'mini projects/8.png', link:'https://sankalp-2003.github.io/Real-time-Character-Counter/', git:'https://github.com/Sankalp-2003/Real-time-Character-Counter'},
+
+  {name:'Digital Clock', img:'mini projects/9.png', link:'https://sankalp-2003.github.io/Digital-Clock/', git:'https://github.com/Sankalp-2003/Digital-Clock'},
+
+  {name:'Double Landing Page', img:'mini projects/10.png', link:'https://sankalp-2003.github.io/Double-Landing-Pages/', git:'https://github.com/Sankalp-2003/Double-Landing-Pages'},
+
+  // p2
+
+  {name:'Random Color Generator', img:'mini projects/11.png', link:'https://sankalp-2003.github.io/Random-Color-Generator/', git:'https://github.com/Sankalp-2003/Random-Color-Generator'},
+
+  {name:'Rotating Image Gallery', img:'mini projects/12.png', link:'https://sankalp-2003.github.io/Rotating-Image-Gallery/', git:'https://github.com/Sankalp-2003/Rotating-Image-Gallery'},
+
+  {name:'Animated Search Bar', img:'mini projects/13.png', link:'https://sankalp-2003.github.io/Animated-Search-Bar/', git:'https://github.com/Sankalp-2003/Animated-Search-Bar'},
+
+  {name:'Loan Calculator', img:'mini projects/14.png', link:'https://sankalp-2003.github.io/Loan-Calculator/', git:'https://github.com/Sankalp-2003/Loan-Calculator'},
+
+  {name:'New Year Countdown', img:'mini projects/15.png', link:'https://sankalp-2003.github.io/New-Year-Countdown/', git:'https://github.com/Sankalp-2003/New-Year-Countdown'},
+
+  {name:'Pomodoro Timer', img:'mini projects/16.png', link:'https://sankalp-2003.github.io/Pomodoro-Timer/', git:'https://github.com/Sankalp-2003/Pomodoro-Timer'},
+
+  {name:'Age Calculator', img:'mini projects/17.png', link:'https://sankalp-2003.github.io/Age-Calculator/', git:'https://github.com/Sankalp-2003/Age-Calculator'},
+
+  {name:'Number Statistics', img:'mini projects/18.png', link:'https://sankalp-2003.github.io/Number-Statistics/', git:'https://github.com/Sankalp-2003/Number-Statistics'},
+
+  {name:'Video Trailer Popup', img:'mini projects/19.png', link:'https://sankalp-2003.github.io/Video-Trailer-Popup/', git:'https://github.com/Sankalp-2003/Video-Trailer-Popup'},
+
+  {name:'Drum Kits', img:'mini projects/20.png', link:'https://sankalp-2003.github.io/Drum-Kits/', git:'https://github.com/Sankalp-2003/Drum-Kits'},
+
+  // p3
+
+  {name:'Clock', img:'mini projects/21.png', link:'https://sankalp-2003.github.io/Clock/', git:'https://github.com/Sankalp-2003/Clock'},
+
+  {name:'Temperature Converter', img:'mini projects/22.png', link:'https://sankalp-2003.github.io/Temperature-Converter/', git:'https://github.com/Sankalp-2003/Temperature-Converter'},
+
+  {name:'BMI Calculator', img:'mini projects/23.png', link:'https://sankalp-2003.github.io/BMI-Calculator/', git:'https://github.com/Sankalp-2003/BMI-Calculator'},
+
+  {name:'Sticky Navbar', img:'mini projects/24.png', link:'https://sankalp-2003.github.io/Sticky-Navbar/', git:'https://github.com/Sankalp-2003/Sticky-Navbar'},
+
+  {name:'Random Emoji', img:'mini projects/25.png', link:'https://sankalp-2003.github.io/Random-Emoji/ ', git:'https://github.com/Sankalp-2003/Random-Emoji'},
+
+  {name:'Tip Calculator', img:'mini projects/26.png', link:'https://sankalp-2003.github.io/Tip-Calculator/', git:'https://github.com/Sankalp-2003/Tip-Calculator'},
+
+  {name:'Loading Bar', img:'mini projects/27.png', link:'https://sankalp-2003.github.io/Loading-Bar/', git:'https://github.com/Sankalp-2003/Loading-Bar'},
+
+  {name:'Background Image Scroll Effect', img:'mini projects/28.png', link:'https://sankalp-2003.github.io/Background-Image-Scroll-Effect/', git:'https://github.com/Sankalp-2003/Background-Image-Scroll-Effect'},
+
+  {name:'Mouse Event', img:'mini projects/29.png', link:'https://sankalp-2003.github.io/Mouse-Event/', git:'https://github.com/Sankalp-2003/Mouse-Event'},
+
+  {name:'Dice Roll Simulator', img:'mini projects/30.png', link:'https://sankalp-2003.github.io/Dice-Roll-Simulator/', git:'https://github.com/Sankalp-2003/Dice-Roll-Simulator'},
+];
+
+let clutter = '';
+mp.forEach((elem)=>{
+  clutter += `<a href="${elem.link}"><div class="box-container">
+      <div class="image">
+        <img src="${elem.img}" alt="">
+      </div>
+      <div class="name">
+        <h2>${elem.name} <a href="${elem.git}"><i class="ri-github-fill"></i></a></h2>
+      </div>
+    </div></a>`;
+})
+container.innerHTML = clutter;
+  </script>
+</body>
+</html>

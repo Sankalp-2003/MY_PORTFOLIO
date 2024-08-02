@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sankalp's Portfolio Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <nav>
+      <div class="nav-part1">
+        <h1>Sankalp</h1>
+      </div>
+      <div class="nav-part2">
+        <ul>
+          <li id="home">Home</li>
+          <li id="skills">skills</li>
+          <li id="works">Works</li>
+          <li id="contact"><span>Contact</span></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page1">
+      <div class="page1-left">
+        <div class="left-container">
+          <h1>Hello, I'm Web Dev</h1>
+          <h2 class="auto-type"></h2>
+          <p>Welcome to my Portfolio Website</p>
+          <div class="page1-btns">
+            <div id="contactMe" class="contact-btn p1-btns">Contact me</div>
+            <div class="resume-btn p1-btns">Resume <i class="ri-download-2-line"></i></div>
+          </div>
+          <div class="socialmedias">
+            <a href="https://github.com/Sankalp-2003"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/sankalp-kundapur-50abb4225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://wa.me/917019489270"><i class="ri-whatsapp-fill"></i></a>
+            <a href="https://www.instagram.com/invites/contact/?i=1pq8tnk9d12y5&utm_content=4p6to19"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="page1-right">
+        <div class="profile-img">
+          <img src="Assets/profile_image.png" alt="">
+        </div>
+        <div class="animated-img">
+          <img src="Assets/animation_img.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="page2">
+      <h1 id="h1" class="Myskills">My Skills</h1>
+      <p id="p">Here are my skills</p>
+      <div class="pag2-content">
+        <div class="page2-skills">
+          <h3><i class="ri-html5-fill"></i> HTML</h3>
+          <div class="hr-container">
+            <hr class="bottom-hr">
+          <hr class="top-hr html-hr">
+          </div>
+        </div>
+        <div class="page2-skills">
+          <h3><i class="ri-css3-fill"></i> Css</h3>
+          <div class="hr-container">
+            <hr class="bottom-hr">
+          <hr class="top-hr css-hr">
+          </div>
+        </div>
+        <div class="page2-skills">
+          <h3><i class="ri-javascript-fill"></i> Javascript</h3>
+          <div class="hr-container">
+            <hr class="bottom-hr">
+          <hr class="top-hr js-hr">
+          </div>
+        </div>
+        <div class="page2-skills">
+          <h3> Gsap</h3>
+          <div class="hr-container">
+            <hr class="bottom-hr">
+          <hr class="top-hr gsap-hr">
+          </div>
+        </div>
+        <div class="page2-skills">
+          <h3><i class="ri-tailwind-css-fill"></i> Tailwind Css</h3>
+          <div class="hr-container">
+            <hr class="bottom-hr">
+          <hr class="top-hr tailwind-hr">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page3">
+      <h1 id="h1" class="Myworks">My Works</h1>
+      <p id="p">Here are my Works</p>
+      <div class="page3-container">
+        <div class="works works-lp">
+          <div class="works-image lp">
+            <div class="works-layer">
+              <h2>Click</h2>
+            </div>
+            <img src="landing pages/Retro.png" alt="">
+          </div>
+          <div class="works-name">
+            <h3>10+ Landing Pages</h3>
+          </div>
+        </div>
+        <div class="works works-aw">
+          <div class="works-image aw">
+            <div class="works-layer">
+              <h2>Click</h2>
+            </div>
+            <img src="animated websites/AI & Ml.png" alt="">
+          </div>
+          <div class="works-name">
+            <h3>Animated Websites</h3>
+          </div>
+        </div>
+        <div class="works works-mp">
+          <div class="works-image mp">
+            <div class="works-layer">
+              <h2>Click</h2>
+            </div>
+            <img src="mini projects/19.png" alt="">
+          </div>
+          <div class="works-name">
+            <h3>30+ Javascript Mini Projects</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page4">
+      <h1 id="h1" class="contacts">Contact</h1>
+      <form>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" name="" id="email" placeholder="e.g. example@gmail.com" required>
+        <textarea name="" id="textarea" placeholder="Write your message" required></textarea>
+        <button type="submit" id="submit" onclick="Send()">Send Via WhatsApp<i class="ri-send-plane-fill"></i></button>
+      </form>
+    </div>
+    <footer>
+        <h1>Let's Talk</h1>
+        <div class="footer-icons">
+          <a href="https://wa.me/917019489270"><i class="ri-whatsapp-fill"></i></a>
+          <a href="https://www.instagram.com/invites/contact/?i=1pq8tnk9d12y5&utm_content=4p6to19"><i class="ri-instagram-fill"></i></a>
+        </div>
+        
+    </footer>
+  </div>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="gsap.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed('.auto-type', {
+    strings: ['I am Sankalp.','I build Websites.','I am Sankalp.'],
+    typeSpeed: 100,
+  });
+</script>
+  <script src="script.js"></script>
+</body>
+</html>

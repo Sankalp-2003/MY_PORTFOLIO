@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Websites</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="works.css">
+</head>
+<body>
+  <div class="container cont2">
+    
+  </div>
+
+  <script>
+    let container = document.querySelector('.container');
+
+let aw = [
+  {name:'Lazarev-AI-ML', img:'animated websites/Ai & ML.png', link:'https://sankalp-2003.github.io/lazarev-AI-ML/', git:'https://github.com/Sankalp-2003/lazarev-AI-ML'},
+
+  {name:'Sidcup-golf', img:'animated websites/sidcup-golf.png', link:'https://sankalp-2003.github.io/Golf-animated-website/', git:'https://github.com/Sankalp-2003/Golf-animated-website'},
+
+  {name:'Sundown-studio', img:'animated websites/sundown-studio.png', link:'https://sankalp-2003.github.io/Golf-animated-website/', git:'https://github.com/Sankalp-2003/Sundown-Studio-website'},
+];
+
+let clutter = '';
+aw.forEach((elem)=>{
+  clutter += `<a href="${elem.link}"><div class="box-container">
+      <div class="image">
+        <img src="${elem.img}" alt="">
+      </div>
+      <div class="name">
+        <h2>${elem.name} <a href="${elem.git}"><i class="ri-github-fill"></i></a></h2>
+      </div>
+    </div></a>`;
+})
+container.innerHTML = clutter;
+  </script>
+</body>
+</html>
