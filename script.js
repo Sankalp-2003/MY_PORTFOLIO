@@ -112,7 +112,7 @@ let SkillContainer = document.querySelector('.pag2-content');
 
 window.addEventListener('scroll',()=>{
   let paraPosition = page2Para.getBoundingClientRect().top;
-  if(paraPosition < 300 && !functionActivated){
+  if(paraPosition < 800 && !functionActivated){
     functionActivated = true;
     SkillContainer.style.opacity = 1;
     

@@ -84,7 +84,6 @@ nav.scrolled{
   font-size: 2rem;
   padding-top: 1rem;
   color: #FAB327;
-  -webkit-text-stroke: 0.3px #000;
 }
 .left-container p{
   font-size: 1.5rem;
@@ -409,15 +408,19 @@ footer i{
 @media (max-width:600px) {
   nav{
     width: 100%;
-    height: 60px;
-    padding: 0 10px;
+    height: 50px;
+    padding: 5px;
+  }
+  nav h1{
+    font-family: sans-serif;
   }
   .nav-part1{
-    font-size: 12px;
+    display: none;
   }
   .nav-part2 ul li{
-    font-size: 12px;
-    margin: 5px;
+    font-size: 18px;
+    margin: 10px;
+    
   }
 
 
@@ -440,15 +443,25 @@ footer i{
   .left-container h2{
     font-size: 2rem;
     padding-top: .5rem;
+    text-align: center;
   }
   .left-container p{
     font-size: 1rem;
     padding-top: .2rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
   .page1-btns{
     width: 100%;
     height: 15vw;
+    justify-content: space-evenly;
+  }
+  .socialmedias{
+    display: flex;
+    justify-content: center;
+  }
+  .socialmedias a{
+    font-size: 40px;
   }
 
   .page1-right{
@@ -457,7 +470,7 @@ footer i{
   }
   .profile-img{
     top: 6vw;
-    left: 3vw;
+    left: 1.5vw;
   }
   
   .profile-img img{
@@ -484,13 +497,40 @@ footer i{
   }
 
   .page3{
-    height: 40vh;
+    height: 110vh;
   }
   .page3-container{
-    height: 50%;
+    padding: 0 8px;
+    max-width: 100vw;
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 9rem;
+    align-items: start;
+    overflow: unset;
   }
   .works-image {
+    height: 200px;
+    width: 350px;
     padding: 2px 5px;
+    margin-bottom: 5px;
+    /* display: none; */
+  }
+  .works-name{
+    width: 89vw;
+    text-align: center;
+    padding: 5px;
+  }
+  .works-lp{
+    transition: opacity 1s ease;
+  }
+  .works-aw{
+    transition: opacity 1s ease;
+  }
+  .works-mp{
+    transition: opacity 1s ease;
   }
 
   .page4{
@@ -523,6 +563,7 @@ footer i{
   }
   footer h1{
     font-size: 30px;
+    font-family: sans-serif;
   }
   footer i{
     font-size: 1.5rem;
